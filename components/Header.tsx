@@ -57,6 +57,19 @@ const Header = () => {
       <div className="ml-5 flex items-center lg:hidden">
         <MenuIcon className="icon" />
       </div>
+
+      {/* SignIn Section */}
+      <div className="hidden cursor-pointer items-center space-x-2 border border-gray-100 p-2 lg:flex">
+        <div className="relative h-5 w-5 flex-shrink-0">
+          <Image
+            objectFit="contain"
+            src="/Reddit-icon.png"
+            layout="fill"
+            alt=""
+          />
+        </div>
+        <p className="text-gray-500">Sign In</p>
+      </div>
     </div>
   )
 }
