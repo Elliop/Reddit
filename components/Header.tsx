@@ -16,9 +16,16 @@ const Header = () => {
       </div>
 
       {/* Search Box */}
-      <form className="flex flex-1 items-center space-x-1 rounded-sm border border-gray-200">
+      <form
+        className="flex flex-1 items-center space-x-1 rounded-sm border border-gray-200
+      bg-gray-100 px-3 py-1"
+      >
         <SearchIcon className="h-6 w-6 text-gray-400" />
-        <input type="text" placeholder="Search Reddit" />
+        <input
+          className="flex-1 bg-transparent outline-none"
+          type="text"
+          placeholder="Search Reddit"
+        />
         <button hidden type="submit"></button>
       </form>
     </div>
