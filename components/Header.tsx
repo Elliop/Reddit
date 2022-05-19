@@ -1,6 +1,20 @@
 import Image from 'next/image'
 import React from 'react'
-import { ChevronDownIcon, HomeIcon, SearchIcon } from '@heroicons/react/solid'
+import {
+  ChevronDownIcon,
+  HomeIcon,
+  SearchIcon,
+  MenuIcon,
+} from '@heroicons/react/solid'
+import {
+  BellIcon,
+  ChatIcon,
+  GlobeIcon,
+  PlusIcon,
+  SparklesIcon,
+  SpeakerphoneIcon,
+  VideoCameraIcon,
+} from '@heroicons/react/outline'
 
 const Header = () => {
   return (
@@ -28,6 +42,21 @@ const Header = () => {
         />
         <button hidden type="submit"></button>
       </form>
+
+      {/* Right Section */}
+      <div className="mx-5 hidden items-center space-x-2 text-gray-500 lg:inline-flex">
+        <SparklesIcon className="icon" />
+        <GlobeIcon className="icon" />
+        <VideoCameraIcon className="icon" />
+        <hr className="h-10 border border-gray-100" />
+        <ChatIcon className="icon" />
+        <BellIcon className="icon" />
+        <PlusIcon className="icon" />
+        <SpeakerphoneIcon className="icon" />
+      </div>
+      <div className="ml-5 flex items-center lg:hidden">
+        <MenuIcon className="icon" />
+      </div>
     </div>
   )
 }
